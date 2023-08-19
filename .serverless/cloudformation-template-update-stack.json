@@ -91,7 +91,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "cohort2.serverless.deploys.chris",
-          "S3Key": "serverless/Sat-Morn-Fever-Chris/dev/1692413936349-2023-08-19T02:58:56.349Z/Sat-Morn-Fever-Chris.zip"
+          "S3Key": "serverless/Sat-Morn-Fever-Chris/dev/1692415193881-2023-08-19T03:19:53.881Z/Sat-Morn-Fever-Chris.zip"
         },
         "Handler": "index.handler",
         "Runtime": "nodejs18.x",
@@ -109,14 +109,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersionsVzdQlQHiEmX03r3g7V0gjvnvcohfWKZ7ILJBbojBo": {
+    "ApiLambdaVersion4h94KaqKeaqd8ITm58hMmKKHQbDSYAbieopXlzCTIk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "dfXvpJbl5FZVAcF5YuCy/IWjXAX0gPHtzzOBPB/c4m4="
+        "CodeSha256": "rGz9yfKd1DWL4Tq7861q33MBJi3v+9ZBOPlOwwEs3ds="
       }
     },
     "HttpApi": {
@@ -225,7 +225,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionsVzdQlQHiEmX03r3g7V0gjvnvcohfWKZ7ILJBbojBo"
+        "Ref": "ApiLambdaVersion4h94KaqKeaqd8ITm58hMmKKHQbDSYAbieopXlzCTIk"
       },
       "Export": {
         "Name": "sls-Sat-Morn-Fever-Chris-dev-ApiLambdaFunctionQualifiedArn"
