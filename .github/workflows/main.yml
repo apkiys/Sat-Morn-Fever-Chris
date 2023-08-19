@@ -35,8 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: unit-testing
     steps:
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - name: Check out repository code
+      uses: actions/checkout@v3
     - name: Run installation of dependencies command
       run: npm install
     - name: Run unit testing
