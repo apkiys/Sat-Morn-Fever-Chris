@@ -16,7 +16,7 @@ functions:
           path: /
           method: get
     environment:
-      ACCESS_KEY: ${ssm:ACCESS_KEY}
+      ACCESS_KEY: ${ssm:Chris_Key}
 
 plugins:
   - serverless-offline
