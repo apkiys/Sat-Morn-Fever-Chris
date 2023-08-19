@@ -4,8 +4,7 @@ module.exports.handler = async (event) => {
     body: JSON.stringify(
       {
         message: "Your function executed successfully!",
-        access_local_key: process.env.access_local_key,
-        access_key: process.env.access_key
+        access_key: process.env.ACCESS_KEY
       },
       null,
       2
